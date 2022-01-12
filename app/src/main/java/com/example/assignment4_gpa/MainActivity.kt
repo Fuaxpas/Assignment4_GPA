@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
             var total = cd1.toInt() + cd2.toInt() + cd3.toInt() + cd4.toInt() + cd5.toInt()
             textView16.text = total.toString()
             var sum = 0.0
-            sum += (cd1.toDouble() * p1.toDouble()) * (cd2.toDouble() * p2.toDouble()) * (cd3.toDouble() * p3.toDouble()) * (cd4.toDouble() * p4.toDouble()) * (cd5.toDouble() * p5.toDouble())
+            sum += (cd1.toDouble() * p1.toDouble()) + (cd2.toDouble() * p2.toDouble()) + (cd3.toDouble() * p3.toDouble()) + (cd4.toDouble() * p4.toDouble()) + (cd5.toDouble() * p5.toDouble())
             textView17.text = String.format("%.2f", sum / total)
         }
 
